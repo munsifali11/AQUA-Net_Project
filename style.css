@@ -1,0 +1,255 @@
+/* -------------------------
+   General Styles
+------------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff; /* Light underwater tone */
+    color: #00334d;
+    margin: 0;
+    padding: 0 60px;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+    color: #000000;
+}
+
+p {
+    line-height: 1.7;
+}
+
+/* -------------------------
+   Container
+------------------------- */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.main-content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0;
+    background-color: #e6f7ff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.2);
+}
+
+/* -------------------------
+   Header
+------------------------- */
+header {
+    background: linear-gradient(90deg, #006699 0%, #0099cc 100%);
+    color: #fff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* -------------------------
+   Navigation
+------------------------- */
+nav {
+    background-color: #004466;
+    text-align: center;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #ffffff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #00ccff;
+    text-decoration: underline;
+}
+
+/* -------------------------
+   Sections
+------------------------- */
+section {
+    text-align: justify;
+    padding: 60px 0;
+}
+
+section img,
+section video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 0;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* -------------------------
+   Lists
+------------------------- */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #005580;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover,
+ul li a:focus {
+    color: #00ccff;
+}
+
+/* -------------------------
+   Model Diagram
+------------------------- */
+.model-diagram {
+    max-width: 60%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* -------------------------
+   Results Section
+------------------------- */
+.results-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.results-images img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+.video-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    display: block;
+    margin: 0 auto;
+}
+
+/* -------------------------
+   Materials Section
+------------------------- */
+.materials-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.materials-links img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.materials-links img:hover,
+.materials-links img:focus {
+    transform: scale(1.1);
+}
+
+.materials-links img:first-child {
+    margin-right: 120px;
+}
+
+.materials-links img:last-child {
+    margin-left: 120px;
+}
+
+/* -------------------------
+   Citation Box
+------------------------- */
+.citation-box {
+    background-color: #f0faff;
+    border: 1px solid #b3d9ff;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: "Courier New", monospace;
+    font-size: 0.95em;
+    white-space: pre-wrap;
+    width: 90%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* -------------------------
+   Highlights
+------------------------- */
+.highlight {
+    color: red;
+    font-weight: bold;
+}
+
+/* -------------------------
+   Footer
+------------------------- */
+footer {
+    background-color: #004466;
+    color: #fff;
+    text-align: center;
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+/* -------------------------
+   Responsive Design
+------------------------- */
+@media screen and (max-width: 768px) {
+    .results-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .results-images img {
+        max-width: 100%;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .materials-links img:first-child,
+    .materials-links img:last-child {
+        margin: 0;
+    }
+}
+
+
