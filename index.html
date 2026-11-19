@@ -61,22 +61,18 @@
     <!-- Method Section -->
     <section id="method" class="container">
       <h2>Method</h2>
-      
       <ul>
-        <li>- An illumination-aware enhancement branch is introduced to estimate a spatially adaptive illumination map that guides the decoder, which enables effective correction of non-uniform lighting and depth-dependent color attenuation.</li>
-        <li>- A frequency-guided enhancement module is developed to operate in the Fourier domain, which recovers frequency textures and injects frequency-refined features into the encoder to improve edge sharpness and structural clarity.</li>
-        <li>- A lightweight encoder–decoder architecture is constructed to fuse spatial, illumination, and frequency-domain cues through multi-scale residual modules and illumination-guided skip connections, providing robust enhancement across diverse underwater degradation conditions.</li>
-        <li>- This work introduces the DeepSea dataset, a high-resolution underwater dataset that captures real deep-sea conditions with realistic visual degradations. It serves as a testbed for evaluating deep learning models for real underwater image analysis.</li>
-        <li>- AQUA-Net’s performance is validated on multiple UIE benchmarks as well as on our own dataset through quality analyses and quantitative metrics. It shows comparable results to state-of-the-art (SOTA) approaches with less computational complexity.</li>
+        <li>An illumination-aware enhancement branch is introduced to estimate a spatially adaptive illumination map that guides the decoder, which enables effective correction of non-uniform lighting and depth-dependent color attenuation. Moreover, a frequency-guided enhancement module is developed to operate in the Fourier domain, which recovers frequency textures and injects frequency-refined features into the encoder to improve edge sharpness and structural clarity.</li>
+        <li>A lightweight encoder–decoder architecture is constructed to fuse spatial, illumination, and frequency-domain cues through multi-scale residual modules and illumination-guided skip connections, providing robust enhancement across diverse underwater degradation conditions.</li>
+        <li>This work introduces the DeepSea dataset, a high-resolution underwater dataset that captures real deep-sea conditions with realistic visual degradations. It serves as a testbed for evaluating deep learning models for real underwater image analysis.</li>
+        <li>AQUA-Net’s performance is validated on multiple UIE benchmarks as well as on our own dataset through quality analyses and quantitative metrics. It shows comparable results to state-of-the-art (SOTA) approaches with less computational complexity.</li>
       </ul>
       
       <img src="model_v6.png" alt="AQUA-Net architecture diagram" class="model-diagram">
        
       <p>
-        Figure: AQUA-Net architecture combines a frequency enhancement block, an illumination branch, and a multi-level
-        encoder–decoder backbone with Residual Enhancement Modules (REMs). The frequency block output fuses with the encoder
-        input. Skip connections integrate illumination information to enhance feature refinement and restore underwater
-        image quality.
+        Figure: AQUA-Net architecture. The network combines a frequency enhancement block, an illumination branch, and a multi-level encoder–decoder backbone with
+        Residual Enhancement Modules (REMs). The frequency block output fuses with the encoder input. Skip connections integrate illumination information to enhance feature refinement and restore underwater image quality.
       </p>
       
     </section>
